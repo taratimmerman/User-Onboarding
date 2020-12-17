@@ -18,7 +18,7 @@ export default function Form(props) {
           <form onSubmit={onSubmit}>
               <div className='submit'>
                   <h2>User Onboarding</h2>
-                  <div>
+                  <div className="errors">
                       <div>{errors.name}</div>
                       <div>{errors.email}</div>
                       <div>{errors.password}</div>
@@ -55,13 +55,13 @@ export default function Form(props) {
                   <label>
                       <select onChange={onChange} value={values.role} name='role'>
                         <option value=''>- Select an option -</option>
-                        <option value='client'>Client</option>
-                        <option value='quality assurance'>Quality Assurance</option>
-                        <option value='project manager'>Project Manager</option>
-                        <option value='developer'>Developer</option>
+                        <option value='Client'>Client</option>
+                        <option value='Quality Assurance'>Quality Assurance</option>
+                        <option value='Project Manager'>Project Manager</option>
+                        <option value='Developer'>Developer</option>
                       </select>
                   </label>    
-                  <label>
+                  <label className='tos'>
                       Terms of Service
                       <input
                         checked={values.tos}

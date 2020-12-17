@@ -13,8 +13,9 @@ export default yup.object().shape({
     .required('Password is Required'),
   role: yup
     .string()
-    .oneOf(['client', 'quality assurance', 'project manager', 'developer', ], 'Role is Required'),
+    .oneOf(['Client', 'Quality Assurance', 'Project Manager', 'Developer', ], 'Role is Required'),
   tos: yup
-    .boolean(),
+    .boolean()
+    .oneOf([true]),
 });
 

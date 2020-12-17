@@ -1,3 +1,58 @@
+body {
+  background-color: #282726;
+}
+
+#root {
+  max-width: 500px;
+  margin: 10% auto;
+  display: flex;
+}
+
 .App {
+  background:rgba(255,255,255,0.2);
+  margin:20px;
+  padding:20px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
   text-align: center;
+  align-items: center;
+}
+
+.submit {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.submit > * {
+  flex:1 1 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  color:white;
+  letter-spacing: 2px;
+  text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+}
+
+
+input, select{
+  margin: 20px;
+}
+
+.tos{
+  color: lightgray;
+  margin-bottom: 20px;
+}
+
+.errors {
+  color: firebrick;
+}
+
+.usercontainer {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+.usercontainer:last-child {
+  border-bottom: 0;
 }
